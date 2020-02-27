@@ -14,3 +14,11 @@ after { puts }                                                              #
 
 events_table = DB.from(:events)
 rsvps_table = DB.from(:rsvps)
+
+get "/" do 
+    puts "params: #{params}"
+
+    @events = events_table.all.to_a 
+    puts @events[0]["title"]
+    view "events"
+end

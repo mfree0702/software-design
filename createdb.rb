@@ -11,6 +11,7 @@ DB.create_table! :events do
   String :date
   String :location
 end
+
 DB.create_table! :rsvps do
   primary_key :id
   foreign_key :event_id

@@ -1,0 +1,11 @@
+<h1> All Events </h1>
+
+<p><%= @events[0]["title"] %> </h3>
+
+<% for i in @events %>
+    <p> 
+        <a href = "#"> <%= i[:title] %></a> 
+    </p>
+<% end %> 
+
+
